@@ -30,15 +30,37 @@
             <td>{{ $user->model }}</td>
             <td>{{ $user->color }}</td>
             <td>{{ $user->agency_name }}</td>
-
-
-
-
         </tr>
         @endforeach
-    
-
 </table>
+
+<p></p>
+
+<table border='1'>
+    <tr>
+        <th>car model</th>
+        <th>car plate no</th>
+        <th>car color</th>
+        <th>agency name</th>
+        <th>agency email</th>
+        <th>agency address</th>
+
+    </tr>
+
+    
+        @foreach($users as $user)
+        <tr>
+            <td>{{ $user->model }}</td>
+            <td>{{ $user->plate_no }}</td>
+            <td>{{ $user->color }}</td>
+            <td>{{ $user->agency_name }}</td>
+            <td>{{ $user->email }}</td>
+            <td>{{ $user->address }}</td>
+        </tr>
+        @endforeach
+</table>
+
+
     
 </body>
 </html>

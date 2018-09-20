@@ -23,7 +23,7 @@ class RentalController extends Controller
         $users = \DB::table('user')
             ->join('cars', 'user.id', '=', 'cars.id')
             ->join('agency' , 'cars.id', '=' , 'agency.id')
-            ->select('user.name','user.age' ,'user.email', 'cars.plate_no', 'cars.model' , 'cars.color','agency.agency_name')
+            ->select('user.name','user.age' ,'user.email', 'cars.plate_no', 'cars.model' , 'cars.color','agency.agency_name','agency.address' , 'agency.email')
             ->get();
 
             return view('userinfo', ['users' => $users]);  
@@ -36,7 +36,6 @@ class RentalController extends Controller
      */
     public function create()
     {
-        //
 
     }
 
