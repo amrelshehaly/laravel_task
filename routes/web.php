@@ -20,3 +20,4 @@ Route::get('userinfo', function () {
 });
 
 Route::get('userinfo','RentalController@index');
+Route::get('','RentalController@create');
