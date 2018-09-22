@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-
+    
+    @section('tables')
+        <h1>helphjvvvvvvvvvvvvvv</h1>
+    @endsection
 <table border='1'>
     <tr>
         <th>User Name</th>

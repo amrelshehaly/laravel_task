@@ -65,6 +65,11 @@
         </style>
     </head>
     <body>
+
+            @extends('userinfo')
+
+            @yield('tables')
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
