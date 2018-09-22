@@ -19,5 +19,5 @@ Route::get('userinfo', function () {
     return view('userinfo');
 });
 
-Route::get('userinfo','RentalController@index');
-Route::get('','RentalController@create');
+Route::get('/','RentalController@index');
+// Route::get('','RentalController@create');

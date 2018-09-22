@@ -36,7 +36,7 @@ class RentalController extends Controller
      */
     public function create()
     {
-        return redirect('userinfo');
+        
     }
 
     /**
